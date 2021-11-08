@@ -1,0 +1,33 @@
+<div class="container tabla-listar">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+                <div class="card-header text-center">
+                    Lista de Estudiantes
+                </div>
+                <div class="card-body text-center mt-5">
+                    <table  matTableExporter class="table table-striped table-hover" #exporter="matTableExporter">
+                        <thead>
+                            <tr>
+                                <th scope="col">Documento</th>
+                                <th scope="col">Nombre Estudiante</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let estudiante of listaEstudiantes">
+                                <td>{{ estudiante.documento }}</td>
+                                <td>{{ estudiante.nombre }}</td>
+                                <td>
+                                    <i class="fas fa-edit text-primary"></i>
+                                    <i class="fas fa-trash-alt text-danger"></i>
+                                </tr>
+                        </tbody>
+                    </table>
+                    <button mat-button (click)="exporter.exportTable('csv')"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
