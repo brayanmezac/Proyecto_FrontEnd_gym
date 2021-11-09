@@ -10,11 +10,6 @@ import { ListarEstudiantesComponent } from './components/listar-estudiantes/list
 import { CrearEstudiantesComponent } from './components/crear-estudiantes/crear-estudiantes.component';
 import { EditarEstudiantesComponent } from './components/editar-estudiantes/editar-estudiantes.component';
 import { ContadorComponent } from './components/contador/contador.component';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
-import { MatInputModule } from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { MatTableExporterModule } from 'mat-table-exporter';
 
 @NgModule({
   declarations: [
@@ -29,12 +24,6 @@ import { MatTableExporterModule } from 'mat-table-exporter';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatTableExporterModule,
-    MatSortModule,
-    MatInputModule, 
-    MatFormFieldModule,
-    MatPaginatorModule,
-    MatTableExporterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
